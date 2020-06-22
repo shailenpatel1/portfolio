@@ -69,8 +69,41 @@ ul.menu-items {
    color: white;
 }
 
+.about p.changing-text {
+  display: inline;
+  animation-name: p;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
 
+#text2{
+    animation-delay: 6s;
+}
 
+@keyframes p {
+    0% {content: "developer"; font-size:100%; opacity:1;}
+    50% {content: ""; font-size:0; opacity:0;}
+    100% {content: "designer"; font-size:100%;opacity:1;}
+}
+
+/*
+
+.about p.changing-text {
+  animation: pulse 5s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.about p.changing-text:after {
+  content: "";
+  animation: spin 5s linear;
+}
+
+@keyframes spin {
+  0% { content:"Hi"; }
+  100% { content:"How do you like it?"; }
+}
+*/
 
 
 
