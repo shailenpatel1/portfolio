@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 body {
   background-color: white;
 }
@@ -14,15 +17,32 @@ body {
   box-shadow: 0 3px 5px 5px rgba(57, 63, 72, 0.3);
 }
 
+.corner {
+  height: 1.8em;
+  width: 0.3em;
+  background-color: #a0d6b4;
+  float: left;
+  margin-left: -62.5%;
+  margin-top: -0.5em;
+}
+
+.corner2 {
+  height: 0.3em;
+  width: 1.8em;
+  background-color: #a0d6b4;
+  margin-left: -62.5%;
+  margin-top: -0.5em;
+}
+
 .menu a.name {
   text-decoration: none;
   color: black;
-  margin: 0em 4em 0em -19em;
-  transition: 0.5s;
-  font-family: sans-serif;
+  margin: 0em 4em 0em -18em;
+  font-family: 'Quicksand', sans-serif;
   font-size: 150%;
   float: left;
   font-weight: bolder;
+  margin-top: -0.2em;
 }
 
 ul.menu-items {
@@ -40,7 +60,7 @@ ul.menu-items {
   color: #838383;
   margin: 0em 2em;
   transition: 0.5s;
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 120%;
 }
 
@@ -67,7 +87,7 @@ ul.menu-items {
 }
 
 .about {
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 5em 5em;
   color: rgba(0,0,0,.8);
   letter-spacing: 1.5px;
@@ -90,7 +110,7 @@ ul.menu-items {
 }
 
 .projects {
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 5em 5em;
   color: rgba(0,0,0,.8);
   letter-spacing: 1.5px;
@@ -105,7 +125,7 @@ ul.menu-items {
 }
 
 .contact {
-  font-family: sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .profilepic {
@@ -113,7 +133,20 @@ ul.menu-items {
   shape-outside: circle();
 }
 
+.about p.resume:hover {
+  color: #a0d6b4;
+  font-weight: bolder;
+}
 
+.about p.resume {
+  font-size: 120%;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.projects div.circle1 {
+
+}
 
 
 
