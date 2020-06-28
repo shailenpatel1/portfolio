@@ -95,7 +95,7 @@ ul.menu-items {
 }
 
 #about {
-  scroll-margin-top: 4.375em;
+  scroll-margin-top: 10.375em;
 }
 
 .about p.bio {
@@ -136,6 +136,11 @@ ul.menu-items {
   letter-spacing: 0.09375em;
 }
 
+.blog p.blog-description {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+}
+
 #blog {
   scroll-margin-top: 4.375em;
 }
@@ -145,31 +150,39 @@ ul.menu-items {
   text-align: center;
 }
 
-.blog div.blog-posts div.card1 {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  width: 300px;
-  display: inline;
-  float: left;
+.blog div.blog-posts p.blog-subheader {
+  font-size: 0.7em;
+  margin: 0 0 -1em;
+  color: grey;
+  font-weight: bolder;
 }
 
-.blog div.blog-posts div.card1:hover {
-  box-shadow: 0 100px 100px 0 rgba(0,0,0,0.2);
+.blog div.blog-posts div.card1 {
+  width: 18.75em;
+  height: 16.5em;
+  display: inline;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .blog div.blog-posts div.card2 {
   margin: 0 0 0 5.5em;
   display: inline;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  width: 300px;
+  width: 18.75em;
   float: left;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .blog div.blog-posts div.card3 {
   margin: 0 0 0 5.5em;
   display: inline;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  width: 300px;
+  width: 18.75em;
   float: left;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.blog div.blog-posts div.card3 h3.article3-title:hover {
+  font-weight: bolder;
 }
 
 .contact {
