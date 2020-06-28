@@ -121,6 +121,14 @@ ul.menu-items {
   scroll-margin-top: 4.375em;
 }
 
+.projects ul.ch-grid div.ch-acf {
+  margin: 0 0 0 -10em;
+}
+
+.projects ul.ch-grid div.ch-dcu {
+  margin: 0 0 0 10em;
+}
+
 .blog {
   font-family: 'Quicksand', sans-serif;
   margin: 5em 5em;
@@ -130,6 +138,38 @@ ul.menu-items {
 
 #blog {
   scroll-margin-top: 4.375em;
+}
+
+.blog div.blog-posts {
+  flex-direction: row;
+  text-align: center;
+}
+
+.blog div.blog-posts div.card1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 300px;
+  display: inline;
+  float: left;
+}
+
+.blog div.blog-posts div.card1:hover {
+  box-shadow: 0 100px 100px 0 rgba(0,0,0,0.2);
+}
+
+.blog div.blog-posts div.card2 {
+  margin: 0 0 0 5.5em;
+  display: inline;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 300px;
+  float: left;
+}
+
+.blog div.blog-posts div.card3 {
+  margin: 0 0 0 5.5em;
+  display: inline;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 300px;
+  float: left;
 }
 
 .contact {
