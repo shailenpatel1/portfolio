@@ -23,7 +23,7 @@ body {
   width: 0.3em;
   background-color: #a0d6b4;
   float: left;
-  margin-left: -62.5%;
+  margin-left: -125.5%;
   margin-top: -0.5em;
 }
 
@@ -31,14 +31,14 @@ body {
   height: 0.3em;
   width: 1.8em;
   background-color: #a0d6b4;
-  margin-left: -62.5%;
+  margin-left: -125.5%;
   margin-top: -0.5em;
 }
 
 .menu a.name {
   text-decoration: none;
   color: black;
-  margin: 0em 4em 0em -18em;
+  margin: 0em 4em 0em -28em;
   font-family: 'Quicksand', sans-serif;
   font-size: 150%;
   float: left;
@@ -89,7 +89,7 @@ ul.menu-items {
 
 .about {
   font-family: 'Quicksand', sans-serif;
-  margin: 7em 5em;
+  margin: 8.2em 5em;
   color: rgba(0,0,0,.8);
   letter-spacing: 1.5px;
 }
@@ -112,13 +112,13 @@ ul.menu-items {
 
 .projects {
   font-family: 'Quicksand', sans-serif;
-  margin: 5em 5em;
+  margin: 9em 5em;
   color: rgba(0,0,0,.8);
   letter-spacing: 0.09375em;
 }
 
 #projects {
-  scroll-margin-top: 4.375em;
+  scroll-margin-top: 10.375em;
 }
 
 .projects ul.ch-grid div.ch-acf {
@@ -142,7 +142,7 @@ ul.menu-items {
 }
 
 #blog {
-  scroll-margin-top: 4.375em;
+  scroll-margin-top: 9.375em;
 }
 
 .blog div.blog-posts {
@@ -181,8 +181,16 @@ ul.menu-items {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.blog div.blog-posts div.card3 h3.article3-title:hover {
-  font-weight: bolder;
+.blog div.blog-posts div.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.blog div.blog-posts div.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.blog div.blog-posts div.card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 }
 
 .contact {
@@ -289,6 +297,22 @@ ul.menu-items {
 .ch-item:hover .ch-info {
   transform: scale(1);
   opacity: 1;
+}
+
+.contact {
+  font-family: 'Quicksand', sans-serif;
+  margin: 25em 5em;
+  color: rgba(0,0,0,.8);
+  letter-spacing: 0.09375em;
+}
+
+#contact {
+  scroll-margin-top: 4.375em;
+}
+
+.contact p.contact-description {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
 }
 
 
