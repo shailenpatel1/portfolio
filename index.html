@@ -3,7 +3,48 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title class="header">Shailen Patel</title>
   <link rel="stylesheet" type="text/css" href="index.css">
-  <link href="/retainable.css">
+  <script type="text/javascript">
+    function copyText() {
+   var theText = 'shailenster@gmail.com';
+ 
+     var hiddenCopy = document.createElement('div');
+     hiddenCopy.innerHTML = theText;
+     hiddenCopy.style.position = 'absolute';
+     hiddenCopy.style.left = '-9999px';
+     var currentRange;
+     if(document.getSelection().rangeCount > 0)
+     {
+          currentRange = document.getSelection().getRangeAt(0);
+          window.getSelection().removeRange(currentRange);
+     }
+     else
+     {
+          currentRange = false;
+     }
+ 
+     document.body.appendChild(hiddenCopy);
+     var CopyRange = document.createRange();
+     CopyRange.selectNode(hiddenCopy);
+     window.getSelection().addRange(CopyRange);
+ 
+     try
+     {
+          document.execCommand('copy');
+     }
+     catch(err)
+     {
+          window.alert("Your Browser Doesn't support this! Error : " + err);
+     }
+     window.getSelection().removeRange(CopyRange);
+     document.body.removeChild(hiddenCopy);
+ 
+     if(currentRange)
+     {
+          window.getSelection().addRange(currentRange);
+     }
+}
+
+  </script>
   <body>
     <div class="menu">
       <ul class="menu-items">
@@ -22,14 +63,15 @@
         <p class="bio">My name is Shailen Patel. I'm a full-stack software engineer based in San Francisco, and a product design freelancer for small organizations. I use data-driven metrics to iterate over my engineering and design solutions and enhance my products. I’m also passionate about human computer interaction, and leverage my knowledge of the field in order to deliver the best possible user experience. In the future, I hope to work as a product manager and move businesses forward. 
         <br>
         <p href="" class="resume">Check out my resume</p>
-        Feel free to reach out to talk about product, UX, or engineering- or even just to say hello! <img class="coffee" src="coffee.png" width="40" height="40"></p>
-
+        Feel free to reach out to talk about product, UX, engineering- or even just to say hello! <img class="coffee" src="coffee.png" width="40" height="40"></p>
+        <div class="line"></div>
     </div>
     <div id="projects" class="projects">
       <h2 class="project-title"> Projects </h2>
+      <p class="projects-description">Click a project to find out more.</p>
       <ul class="ch-grid">
         <li>
-          <div class="ch-item ch-acf">
+          <div ata-aos="fade-right" class="ch-item ch-acf">
             <div class="ch-info">
               <h3>Austin Community Foundation Scholarship Dashboard</h3>
             </div>
@@ -78,8 +120,16 @@
     <div id="contact" class="contact">
         <h2>Contact</h2>
         <p class="contact-description">Let's get in touch.</p>
-        
+        <div class="brightness" onclick="window.open('https://www.linkedin.com/in/shailenpatel1/','mywindow');">
+          <img src="linkedin.png" width="40" height="40">
+        </div>
+        <div class="brightness2" id="email" onclick="copyText()">
+          <p class="tooltiptext">Click to copy my email to your clipboard</p>
+          <img src="email.png" width="50" height="37.5">
+        </div>
+        <h2>(925) 389 - 6615</h2>
     </div>
+
 	</div>
   </body>
 

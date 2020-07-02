@@ -89,7 +89,7 @@ ul.menu-items {
 
 .about {
   font-family: 'Quicksand', sans-serif;
-  margin: 8.2em 5em;
+  margin: 6em 5em;
   color: rgba(0,0,0,.8);
   letter-spacing: 1.5px;
 }
@@ -112,13 +112,13 @@ ul.menu-items {
 
 .projects {
   font-family: 'Quicksand', sans-serif;
-  margin: 9em 5em;
+  margin: 0 5em;
   color: rgba(0,0,0,.8);
   letter-spacing: 0.09375em;
 }
 
 #projects {
-  scroll-margin-top: 10.375em;
+  scroll-margin-top: 9.375em;
 }
 
 .projects ul.ch-grid div.ch-acf {
@@ -129,9 +129,14 @@ ul.menu-items {
   margin: 0 0 0 10em;
 }
 
+.projects .projects-description {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1em;
+}
+
 .blog {
   font-family: 'Quicksand', sans-serif;
-  margin: 5em 5em;
+  margin: 8em 5em;
   color: rgba(0,0,0,.8);
   letter-spacing: 0.09375em;
 }
@@ -307,12 +312,80 @@ ul.menu-items {
 }
 
 #contact {
-  scroll-margin-top: 4.375em;
+  scroll-margin-top: 9.375em;
 }
 
 .contact p.contact-description {
   font-family: 'Quicksand', sans-serif;
   font-size: 1em;
+}
+
+.about div.line {
+  width: 40em;
+  height: .00000000000000000001%;
+  opacity: 0.3;
+  border-radius: 75%;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+}
+
+.contact div.brightness {
+    background-color: white;
+    display: inline-block;
+}
+
+.brightness img:hover {
+    opacity: .2;
+}
+
+.brightness2 {
+    background-color: white;
+    display: inline-block;
+}
+
+.brightness2 img:hover {
+    opacity: .2;
+}
+
+
+.brightness2 {
+  position: relative;
+  display: inline-block;
+}
+
+.brightness2 .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #a0d6b4;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.brightness2 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #a0d6b4 transparent transparent transparent;
+}
+
+.brightness2:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 
